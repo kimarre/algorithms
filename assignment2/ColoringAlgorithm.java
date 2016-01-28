@@ -54,7 +54,6 @@ public class ColoringAlgorithm {
 
       // Assumes empty queue to start with
       queue.add(vertex);
-      System.out.println("recursed over vertex: " + vertex);
 
       while (queue.peek() != null) {
          vertex = queue.remove();
@@ -133,15 +132,6 @@ public class ColoringAlgorithm {
       return 0;
    }
 
-   //Looks for any uncolored vertices. When it finds one, returns its number
-   /*public static int findUncoloredVertex(int[] vertices) {
-      for (int i = 0; i < NUM_VERTICES; i++) {
-         if (vertices[i] == 0) {
-            return i;
-         }
-      }
-      return -1;
-   }*/
    public static void printAllColors(int[] vertices) {
       for (int i = 0; i < NUM_VERTICES; i++) {
          if (vertices[i] == BLUE) {
