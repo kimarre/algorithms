@@ -1,0 +1,7 @@
+# Remove :, ( and ) from the input file
+sed 's/[:()]//g' $1 > intermediate.txt
+
+# Replace the ,'s with spaces
+sed 's/,/ /g' intermediate.txt > fixed/$1
+
+rm intermediate.txt

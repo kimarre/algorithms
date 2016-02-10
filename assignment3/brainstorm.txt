@@ -1,0 +1,2 @@
+Person with the fastest running and biking time should go last
+   Slowerst running/biking time should go first

@@ -1,0 +1,2 @@
+echo javac Triathlon.java Participant.java
+javac Triathlon.java Participant.java
