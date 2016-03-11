@@ -1,0 +1,51 @@
+echo Compiling all files...
+javac SmartGreedy.java
+javac BasicGreedy.java
+javac BruteForce.java
+
+if [ -z "$1" ]
+then
+   echo ----------------------
+   echo demo1
+   echo ----------------------
+   printf "SmartGreedy: "
+   java SmartGreedy demo1
+   printf "BasicGreedy: "
+   java BasicGreedy demo1
+   printf "BruteForce:  "
+   java BruteForce demo1
+
+   echo
+
+   echo ----------------------
+   echo demo2
+   echo ----------------------
+   printf "SmartGreedy: "
+   java SmartGreedy demo2
+   printf "BasicGreedy: "
+   java BasicGreedy demo2
+   printf "BruteForce:  "
+   java BruteForce demo2
+
+   echo
+
+   echo ----------------------
+   echo demo3
+   echo ----------------------
+   printf "SmartGreedy: "
+   java SmartGreedy demo3
+   printf "BasicGreedy: "
+   java BasicGreedy demo3
+   printf "BruteForce:  "
+   java BruteForce demo3
+
+else
+   printf "SmartGreedy: "
+   java SmartGreedy $1
+   printf "BasicGreedy: "
+   java BasicGreedy $1
+   printf "BruteForce:  "
+   java BruteForce $1
+fi
+
+
